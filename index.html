@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Aves Raras</title>
+  <meta name="description" content="Aves Raras de Jaraguá do Sul">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+      padding: 10px;
+    }
+    #slides {
+      display: none
+    }
+    #slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+    .navbar {
+      overflow: hidden
+    }
+    #slides {
+      display: none
+    }
+    .container {
+      margin: 0 auto
+    }
+    @media (max-width: 767px) {
+      body {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .container {
+        width: auto
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        width: auto
+      }
+    }
+    @media (min-width: 768px) and (max-width: 979px) {
+      .container {
+        width: 724px
+      }
+    }
+    @media (min-width: 1200px) {
+      .container {
+        width: 1050px
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="slides">
+      <img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      <img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      <img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+      <img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+    </div>
+  </div>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+  </script>
+</body>
+</html>
