@@ -1,4 +1,4 @@
-aves-raras
+Aves raras
 ==========
 
-Algumas aves raras.
+Aves raras de Jaraguá do Sul
